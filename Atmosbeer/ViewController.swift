@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var atmosbeerLogo: UIImageView!
+    @IBOutlet weak var atmosbeerBg: UIImageView!
+    @IBOutlet weak var atmosbeerButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func showBackgroundAndLogo(sender: AnyObject) {
+        atmosbeerLogo.hidden = false
+        atmosbeerBg.hidden = false
+        atmosbeerButton.hidden = true
+    }
+    
 
 }
 
